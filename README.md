@@ -414,51 +414,7 @@ Mục tiêu:
   - MobileNetV3 + CBAM
 - Có notebook tổng hợp đánh giá tốc độ thực tế
 
-## Hạn chế hiện tại
 
-Từ cấu trúc repo hiện có, một số hạn chế dễ thấy là:
-
-- Chưa có mã nguồn dạng module `src/` rõ ràng
-- Chưa có `requirements.txt`
-- Chưa có file cấu hình môi trường
-- Chưa có script CLI để chạy tự động
-- Nhiều đường dẫn trong notebook đang hard-code theo Kaggle/Colab/Google Drive
-- Kết quả thực nghiệm chưa được tổng hợp thành bảng chính thức trong repo
-
-## Đề xuất cải thiện
-
-Để dự án hoàn chỉnh và chuyên nghiệp hơn, có thể mở rộng thêm:
-
-- Tạo thư mục `src/` để gom các hàm dùng chung
-- Tạo `requirements.txt`
-- Thêm `environment.yml` hoặc notebook setup
-- Thêm bảng kết quả so sánh giữa các mô hình
-- Thêm ảnh minh họa pipeline YOLO
-- Thêm sơ đồ luồng xử lý dữ liệu
-- Tạo script suy luận cho 1 ảnh đơn hoặc 1 thư mục ảnh
-- Tạo báo cáo kết quả theo:
-  - accuracy
-  - precision
-  - recall
-  - F1-score
-  - FPS / inference time
-
-## Gợi ý cấu trúc mở rộng trong tương lai
-
-```text
-RiceLeafDetection/
-|-- data/
-|-- notebooks/
-|-- src/
-|   |-- preprocessing/
-|   |-- detection/
-|   |-- classification/
-|   |-- evaluation/
-|-- models/
-|-- results/
-|-- requirements.txt
-|-- README.md
-```
 
 ## Kết luận
 
@@ -475,11 +431,3 @@ Repo phù hợp cho:
 - nghiên cứu thử nghiệm mô hình
 - làm nền cho hệ thống nhận diện bệnh lá lúa thực tế
 
-## Tác giả
-
-Bạn có thể bổ sung tại đây:
-
-- tên sinh viên hoặc nhóm thực hiện
-- lớp, môn học
-- giảng viên hướng dẫn
-- trường hoặc đơn vị thực hiện
